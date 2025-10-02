@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPF___training.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Application principale" Height="400" Width="600"
+        WindowStartupLocation="CenterScreen">
+
+    <DockPanel>
+        <!-- Menu principal -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Fichier">
+                <MenuItem Header="Quitter" Click="Quitter_Click"/>
+            </MenuItem>
+            <MenuItem Header="Outils">
+                <MenuItem Header="Envoyer un email" Click="OuvrirMailPage_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Zone où les pages seront affichées -->
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </DockPanel>
+</Window>
