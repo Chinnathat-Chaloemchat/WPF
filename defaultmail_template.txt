@@ -1,0 +1,3 @@
+#renomer en defaultmail.txt, supprimer cette ligne et mettre dans bin/Debug/net8.0-windows
+exemple@gmail.com
+mdp d'application

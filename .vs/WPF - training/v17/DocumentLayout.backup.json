@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|c:\\users\\rikke\\desktop\\coding\\wpf - training\\wpf - training\\mailto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|solutionrelative:wpf - training\\mailto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|c:\\users\\rikke\\desktop\\coding\\wpf - training\\wpf - training\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|solutionrelative:wpf - training\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|c:\\users\\rikke\\desktop\\coding\\wpf - training\\wpf - training\\defaultmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|solutionrelative:wpf - training\\defaultmail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|c:\\users\\rikke\\desktop\\coding\\wpf - training\\wpf - training\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|solutionrelative:wpf - training\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|c:\\users\\rikke\\desktop\\coding\\wpf - training\\wpf - training\\mailto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76F92E7B-7423-40B9-BAB1-9BEDC4852F9F}|WPF - training\\WPF - training.csproj|solutionrelative:wpf - training\\mailto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,6 +46,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DefaultMail.cs",
+              "DocumentMoniker": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\DefaultMail.cs",
+              "RelativeDocumentMoniker": "WPF - training\\DefaultMail.cs",
+              "ToolTip": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\DefaultMail.cs",
+              "RelativeToolTip": "WPF - training\\DefaultMail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T07:34:47.294Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\MainWindow.xaml",
@@ -49,25 +65,24 @@
               "ToolTip": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\MainWindow.xaml",
               "RelativeToolTip": "WPF - training\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-25T09:00:11.108Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T09:00:11.108Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "WPF - training\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "WPF - training\\MainWindow.xaml.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WPF - training\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-25T09:00:09.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MailTo.cs",
               "DocumentMoniker": "C:\\Users\\Rikke\\Desktop\\CODING\\WPF - training\\WPF - training\\MailTo.cs",
               "RelativeDocumentMoniker": "WPF - training\\MailTo.cs",
@@ -75,8 +90,7 @@
               "RelativeToolTip": "WPF - training\\MailTo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T07:05:24.599Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T07:05:24.599Z"
             }
           ]
         },

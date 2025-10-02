@@ -1,5 +1,4 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WPF___training
 {
@@ -8,6 +7,15 @@ namespace WPF___training
         public MainWindow()
         {
             InitializeComponent();
+
+            // Charger email/mdp par défaut si disponibles
+            DefaultMail.Load();
+
+            if (!string.IsNullOrEmpty(DefaultMail.Email))
+                mail_sender.Text = DefaultMail.Email;
+
+            if (!string.IsNullOrEmpty(DefaultMail.Password))
+                mdp_sender.Password = DefaultMail.Password;
         }
 
         private void BtnEnvoyer_Click(object sender, RoutedEventArgs e)
@@ -16,16 +24,19 @@ namespace WPF___training
             {
                 MailTo.SendMail(
                     mail_sender.Text.Trim(),
-                    mdp_sender.Password,
+                    mdp_sender.Password.Trim(),
                     mail_reciever.Text.Trim(),
-                    mail_object.Text,
+                    mail_object.Text.Trim(),
                     mail_content.Text
                 );
 
                 MessageBox.Show("Email envoyé avec succès ✅", "Succès",
                     MessageBoxButton.OK, MessageBoxImage.Information);
+
+                // Sauvegarde de l’email + mdp comme valeurs par défaut
+                DefaultMail.Save(mail_sender.Text.Trim(), mdp_sender.Password.Trim());
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 MessageBox.Show(ex.Message, "Erreur",
                     MessageBoxButton.OK, MessageBoxImage.Error);
@@ -34,8 +45,6 @@ namespace WPF___training
 
         private void BtnAnnuler_Click(object sender, RoutedEventArgs e)
         {
-            mail_sender.Clear();
-            mdp_sender.Clear();
             mail_reciever.Clear();
             mail_object.Clear();
             mail_content.Clear();
