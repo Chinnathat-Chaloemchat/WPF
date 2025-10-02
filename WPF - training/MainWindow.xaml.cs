@@ -1,24 +1,44 @@
-﻿using System.Text;
+﻿using System;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WPF___training
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnEnvoyer_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                MailTo.SendMail(
+                    mail_sender.Text.Trim(),
+                    mdp_sender.Password,
+                    mail_reciever.Text.Trim(),
+                    mail_object.Text,
+                    mail_content.Text
+                );
+
+                MessageBox.Show("Email envoyé avec succès ✅", "Succès",
+                    MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erreur",
+                    MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void BtnAnnuler_Click(object sender, RoutedEventArgs e)
+        {
+            mail_sender.Clear();
+            mdp_sender.Clear();
+            mail_reciever.Clear();
+            mail_object.Clear();
+            mail_content.Clear();
         }
     }
 }

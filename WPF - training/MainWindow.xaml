@@ -5,8 +5,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF___training"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Composition d'Email" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        MinHeight="450" MinWidth="600">
 
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="10"/>
+            <!-- Espacement -->
+            <RowDefinition Height="*"/>
+            <!-- Zone message qui s'adapte -->
+            <RowDefinition Height="15"/>
+            <!-- Espacement -->
+            <RowDefinition Height="Auto"/>
+            <!-- Boutons -->
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Email expéditeur -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Votre email:" 
+                   Margin="0,0,10,8" VerticalAlignment="Center" FontWeight="SemiBold"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="mail_sender" 
+                 Margin="0,0,0,8" Height="28" Padding="5" VerticalAlignment="Center"/>
+
+        <!-- Mot de passe -->
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Mot de passe:" 
+                   Margin="0,0,10,8" VerticalAlignment="Center" FontWeight="SemiBold"/>
+        <PasswordBox Grid.Row="1" Grid.Column="1" Name="mdp_sender" 
+                     Margin="0,0,0,8" Height="28" Padding="5" VerticalAlignment="Center"/>
+
+        <!-- Destinataire -->
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Destinataire:" 
+                   Margin="0,0,10,8" VerticalAlignment="Center" FontWeight="SemiBold"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="mail_reciever" 
+                 Margin="0,0,0,8" Height="28" Padding="5" VerticalAlignment="Center"/>
+
+        <!-- Objet -->
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Objet:" 
+                   Margin="0,0,10,8" VerticalAlignment="Center" FontWeight="SemiBold"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="mail_object" 
+                 Margin="0,0,0,8" Height="28" Padding="5" VerticalAlignment="Center"/>
+
+        <!-- Message -->
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Message:" 
+                   Margin="0,0,10,0" VerticalAlignment="Top" FontWeight="SemiBold"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Name="mail_content" 
+                 Margin="0,0,0,0" 
+                 TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Auto"
+                 Padding="8" MinHeight="100"/>
+
+        <!-- Boutons -->
+        <StackPanel Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" 
+                    Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,5,0,0">
+            <Button Name="btnEnvoyer" Content="Envoyer" Width="90" Height="32"
+                Margin="0,0,12,0" Background="#FF008000" Foreground="White"
+                FontWeight="SemiBold" Click="BtnEnvoyer_Click"/>
+
+            <Button Name="btnAnnuler" Content="Annuler" Width="90" Height="32"
+                FontWeight="SemiBold" Click="BtnAnnuler_Click"/>
+
+        </StackPanel>
     </Grid>
 </Window>
